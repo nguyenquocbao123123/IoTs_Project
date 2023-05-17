@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ungdung.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>    
+    <title>Ứng dụng</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="box">
+                <a href="https://www.ctu.edu.vn/"><img src="logoctu.png" alt="Logo" margin="" width="100" height="100"></a>
+            </div>
+            <a href="https://www.ctu.edu.vn/" target="_blank">
+                <b> 
+                    <p style="font-size: 23px;">BỘ MÔN TỰ ĐỘNG HÓA - TRƯỜNG BÁCH KHOA</p>
+                    <p>Học phần: Công nghệ IoTs và Ứng dụng </p>
+                    <p>Mã học phần: KC326 Nhóm: 08 </p>
+                </b>
+            </a>
+        </div>
+        <div class="menu-area">
+            <ul>
+                <li><a href="trangchu.html"><i class="fa fa-fw fa-home"style="font-size:36px;"></i>Trang chủ</a>
+                    <ul class="dropdown-1">
+                        <li><a href="gioithieu.html">Giới thiệu về IOT</a></li>
+                        <li><a href="gtdetai.html">Giới thiệu đề tài </a></li>
+                    </ul>
+                </li>
+                <li><a href="thanhvien.html"><i class="fa fa-male" aria-hidden="true" style="font-size:36px;margin-right: 5px;"></i>Thành viên</a></li>
+                <li><a href="ungdung.html"><i class="fa fa-th-large"style="font-size:36px;margin-right: 5px;"></i>Ứng dụng</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone-square"style="font-size:36px;margin-right: 5px;"></i>Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>  
+    <div id="content"><h1 class="tieu_de" align="center">HỆ THỐNG ĐIỀU KHIỂN ĐÈN GIAO THÔNG IoTs</h1></div>
+<!-------------------------------vi tri 1----------------------------------------->    
+<div id="bang_dk1">
+    <h2 style="background-color: bisque; padding-top: 10px; padding-bottom: 10px; margin: auto; margin-top: 0%; width: 60%;">VỊ TRÍ GIAO THÔNG THỨ 1</h2>
+    <h2>CHẾ ĐỘ ĐÈN</h2>
+    <div id="btn_dk1">
+        <button type="button" id="binh_thuong">BÌNH THƯỜNG</button>
+        <button type="button" id="chay_cham">KHẨN CẤP</button>
+        <button type="button" id="khan_cap">TỰ ĐỘNG</button>
+        <button type="button" id="reset">TẮT</button><br>
+    </div>
+    <h2>ĐẶT THỜI GIAN ĐÈN</h2>
+    <div id="time_dk1">
+        <h3>THỜI GIAN ĐÈN XANH: </h3>
+        <input type="number" id="time_green">
+        <h3 style="margin-top: 10px;">THỜI GIAN ĐÈN ĐỎ: </h3> 
+        <input type="number" id="time_red"><br>
+        <button type="button" id="send">XÁC NHẬN</button>
+    </div>
+    <p style="margin-top: 10px;">Thời gian đèn xanh hiện tại: <span id="t_x_value"></span></p>
+    <p style="margin-top: 10px;">Thời gian đèn đỏ hiện tại: <span id="t_d_value"></span></p>
+</div>
+<!---------------------------------------------------------------------------------------->  
+<!------------------------------------vi tri 2------------------------------------>  
+<div id="bang_dk2">
+    <h2 style="background-color: bisque; padding-top: 10px; margin: auto; padding-bottom: 10px; margin-top: 0%; width: 60%;">VỊ TRÍ GIAO THÔNG THỨ 2</h2>
+    <h2>CHẾ ĐỘ ĐÈN</h2>
+    <div id="btn_dk2">
+        <button type="button" id="binh_thuong2">BÌNH THƯỜNG</button>
+        <button type="button" id="chay_cham2">KHẨN CẤP</button>
+        <button type="button" id="khan_cap2">TỰ ĐỘNG</button>
+        <button type="button" id="reset2">TẮT</button><br>
+    </div>
+    <h2>ĐẶT THỜI GIAN ĐÈN</h2>
+    <div id="time_dk2">
+        <h3>THỜI GIAN ĐÈN XANH: </h3>
+        <input type="number" id="time_green2">
+        <h3 style="margin-top: 10px;">THỜI GIAN ĐÈN ĐỎ: </h3>
+        <input type="number" id="time_red2"><br>
+        <button type="button" id="send2">XÁC NHẬN</button>
+    </div>
+    <p style="margin-top: 10px;">Thời gian đèn xanh hiện tại: <span id="t_x_value2"></span></p>
+    <p style="margin-top: 10px;">Thời gian đèn đỏ hiện tại: <span id="t_d_value2"></span></p>
+</div>
+<div style="margin-bottom: 5px;" id="time" align="center"></div>
+<div style="border: 4px solid rgb(4, 0, 255);width: 650px;border-radius: 9px;font-size: 19px; margin: auto;" id="box_huongdan">
+    <b><p>Hướng dẫn sử dụng trước khi dùng:</p></b>
+    <p style="margin-left: 10px;">Hệ thống có 4 chế độ:</p>
+    <dl style="margin-left: 10px;" id="huongdan" type="circle">
+        <li>Chế độ 1: Hệ thống chạy bình thường theo thời gian đặt các đèn.</li>
+        <li>Chế độ 2: Hệ thống bật đèn đỏ cho những trường hợp khẩn cấp.</li>
+        <li>Chế độ 3: Tự động chạy bình thường sau 22h thì nhấp nhấy đèn vàng.</li>
+        <li>Chế độ 4: Tắt hệ thống.</li>
+    </dl> 
+</div>
+<div id="footer">
+    <p>@Copyright 2023 IOT_NHOM8, All rights reserved</p>
+</div>
+<!------------------------------------------------------------------------>  
+<!---------------------------------------javascript-------------------------------------------------->
+<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase, set, get, onValue, update, remove, ref, child} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+         const firebaseConfig = {
+            apiKey: "AIzaSyDZucO0GrV6SPbiSEI4zU-6XQHc_FKMOM4",
+            authDomain: "datasensor-78105.firebaseapp.com",
+            databaseURL: "https://datasensor-78105-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "datasensor-78105",
+            storageBucket: "datasensor-78105.appspot.com",
+            messagingSenderId: "307376217981",
+            appId: "1:307376217981:web:56f12f687d1a1352b57614",
+            measurementId: "G-7Y3EZ0H3PD"
+    };
+
+    // Initialize Firebase
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+
+//------------------doc thoi gian thuc--------------
+const timeElement = document.getElementById("time");
+
+function updateTime() {
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth() + 1;
+  const year = currentDate.getFullYear();
+  const hour = currentDate.getHours();
+  const minute = currentDate.getMinutes();
+  const second = currentDate.getSeconds();
+
+  const timeString = `${hour}:${minute}:${second} - Ngày ${day} Tháng ${month} Năm ${year}`;
+  timeElement.textContent = timeString;
+}
+setInterval(updateTime, 1000);
+// Lấy giá trị giờ hiện tại
+const currentHour = new Date().getHours();
+// Gửi giá trị giờ lên Firebase Realtime Database
+const hourRef = ref(db, 'hour');
+set(hourRef, currentHour);
+//-----------doc gia trị từ realtime database---------
+onValue(ref(db, "/Time/tru1/t_x"), (snapshot) => {
+                const t_x = snapshot.val();
+                document.getElementById("t_x_value").innerHTML = t_x + " " + "giây"; 
+            });
+
+            onValue(ref(db, "/Time/tru1/t_d"), (snapshot) => {
+                const t_d = snapshot.val();
+                document.getElementById("t_d_value").innerHTML = t_d + " " + "giây"; 
+            });
+//--------------------------------------------------
+onValue(ref(db, "/Time/tru2/t_x"), (snapshot) => {
+                const t_x = snapshot.val();
+                document.getElementById("t_x_value2").innerHTML = t_x + " " + "giây"; 
+            });
+
+            onValue(ref(db, "/Time/tru2/t_d"), (snapshot) => {
+                const t_d = snapshot.val();
+                document.getElementById("t_d_value2").innerHTML = t_d + " " + "giây"; 
+            });
+//---------------------------------------------------
+
+    var normal = document.getElementById("binh_thuong");
+    var slow = document.getElementById("chay_cham");
+    var mercy = document.getElementById("khan_cap");
+    var reset = document.getElementById("reset");
+    var send = document.getElementById("send");
+
+    var normal2 = document.getElementById("binh_thuong2");
+    var slow2 = document.getElementById("chay_cham2");
+    var mercy2 = document.getElementById("khan_cap2");
+    var reset2 = document.getElementById("reset2");
+    var send2 = document.getElementById("send2");
+
+        function kiemtra() {
+            var timeGreen = document.getElementById("time_green").value;
+            var timeRed = document.getElementById("time_red").value;
+            if (timeGreen === "" || timeRed === "") {
+                alert("Vui lòng nhập giá trị cho thời gian đèn");
+                return false;
+            } else if (timeGreen < 0 || timeRed <0) {
+                alert("Thời gian đèn không được âm");
+                return false;
+            }
+            set(ref(db, "Time/tru1"),{
+                        t_x: time_green.value,
+                        t_d: time_red.value,
+                })
+                .then(()=>{
+                    console.log("Data added successfully");
+                    alert("Đã gửi");
+                })
+                .catch((error)=>{
+                    console.log(error);
+                });
+            return true;
+        }
+
+        function ctrl() {
+	        set(ref(db, "chedo/tru1"),{
+				value: 1
+	        })
+		};
+		function sos() {
+	        set(ref(db, "chedo/tru1"),{
+				value: 2
+	        })
+		};
+		function khuya() {
+	        set(ref(db, "chedo/tru1"),{
+				value: 3
+	        })
+		};
+		function test() {
+	        set(ref(db, "chedo/tru1"),{
+				value: 4
+	        })
+		};
+
+        function kiemtra2() {
+            var timeGreen2 = document.getElementById("time_green2").value;
+            var timeRed2 = document.getElementById("time_red2").value;
+            if (timeGreen2 === "" || timeRed2 === "") {
+                alert("Vui lòng nhập giá trị cho thời gian đèn");
+                return false;
+            } else if (timeGreen2 < 0 || timeRed2 <0) {
+                alert("Thời gian đèn không được âm");
+                return false;
+            }
+            set(ref(db, "Time/tru2"),{
+                        t_x: time_green2.value,
+                        t_d: time_red2.value,
+                })
+                .then(()=>{
+                    console.log("Data added successfully");
+                    alert("Đã gửi");
+                    document.getElementById("t_x_value2").innerHTML = document.getElementById("time_green2").value;
+                    document.getElementById("t_d_value2").innerHTML = document.getElementById("time_red2").value;
+                })
+                .catch((error)=>{
+                    console.log(error);
+                });
+            return true;
+        }
+
+        function ctrl2() {
+	        set(ref(db, "chedo/tru2"),{
+				value: 1
+	        })
+		};
+		function sos2() {
+	        set(ref(db, "chedo/tru2"),{
+				value: 2
+	        })
+		};
+		function khuya2() {
+	        set(ref(db, "chedo/tru2"),{
+				value: 3
+	        })
+		};
+		function test2() {
+	        set(ref(db, "chedo/tru2"),{
+				value: 4
+	        })
+		};
+
+        normal.addEventListener('click', ctrl);
+		slow.addEventListener('click', sos);
+        mercy.addEventListener('click', khuya);
+		reset.addEventListener('click', test);
+        send.addEventListener('click', kiemtra);
+
+        normal2.addEventListener('click', ctrl2);
+		slow2.addEventListener('click', sos2);
+        mercy2.addEventListener('click', khuya2);
+		reset2.addEventListener('click', test2);
+        send2.addEventListener('click', kiemtra2);
+
+
+</script>
+<!--------------------------------------------------------------------------------------------------->
+</body>
+</html>

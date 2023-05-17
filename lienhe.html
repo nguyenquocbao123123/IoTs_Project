@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lienhe.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="java.js"></script> -->
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+
+    <title>Liên hệ</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="box">
+                <a href="https://www.ctu.edu.vn/"><img src="logoctu.png" alt="Logo" width="100" height="100"></a>
+            </div>
+            <a href="https://www.ctu.edu.vn/" target="_blank">
+                <p style="font-size: 23px;">BỘ MÔN TỰ ĐỘNG HÓA - TRƯỜNG BÁCH KHOA</p>
+                <p>Học phần: Công nghệ IoTs và Ứng dụng </p>
+                <p>Mã học phần: KC326 Nhóm: 08 </p>
+            </a>
+        </div>
+        <div class="menu-area">
+            <ul>
+                <li><a href="trangchu.html"><i class="fa fa-fw fa-home" style="font-size:36px;"></i>Trang chủ</a>
+                    <ul class="dropdown-1">
+                        <li><a href="gioithieu.html">Giới thiệu về IOT</a></li>
+                        <li><a href="gtdetai.html">Giới thiệu đề tài </a></li>
+                    </ul>
+                </li>
+                <li><a href="thanhvien.html"><i class="fa fa-male" aria-hidden="true" style="font-size:36px;margin-right: 5px;"></i>Thành viên</a></li>
+                <li><a href="ungdung.html"><i class="fa fa-th-large" style="font-size:36px;margin-right: 5px;"></i>Ứng dụng</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone-square" style="font-size:36px;margin-right: 5px;"></i>Liên hệ</a></li>
+    </div>
+    <script src="lienhe.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8vD8v38NyFUqGJwy1");
+        })();
+    </script>
+    <section>
+        <div class="container1">
+            <!--phần thông tin liên hệ-->
+            <div class="oke">
+                <h2>Thông Tin Liên Hệ<br></h2>
+                <div class="hoicham">
+                    <span><a
+                            href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%E1%BA%A7n+Th%C6%A1/@10.0299337,105.7684266,17z/data=!3m1!4b1!4m5!3m4!1s0x31a0895a51d60719:0x9d76b0035f6d53d0!8m2!3d10.0299337!4d105.7706153?hl=vi"><i
+                                class="fa fa-map-marker" aria-hidden="true"></i></a>
+                        Khu II Trường Đại học Cần Thơ<br>
+                        đường 3/2, quận Ninh Kiều,<br>
+                        Thành Cần Thơ
+                    </span>
+                    <br>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i> Nguyenb1913053@student.ctu.edu.vn</span>
+                    <br>
+                    <span><i class="fa fa-phone-square" aria-hidden="true"></i> 0889419509</span>
+                    <br>
+                </div>
+
+                <div class="okela">
+
+                    <a href="https://www.facebook.com/profile.php?id=100008352995341&mibextid=ZbWKwL"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/trungti.teo.5?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/trungti.teo.5?igshid=ZDdkNTZiNTM="><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="containerForm1">
+                <h3>Gửi Lời Nhắn</h3>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" placeholder="Họ" id="surname" autocomplete="off">
+
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" placeholder="Tên" id="name" autocomplete="off">
+
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="Email" placeholder="Email" id="Email" autocomplete="off">
+
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" placeholder="Số Điện Thoại" id="phonecall" autocomplete="off">
+
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea id="Messega" placeholder="Lời nhắn"></textarea>
+
+                    </div>
+                    <div class="inputBox w100">
+
+                        <button class="btn" onclick="sendMail()">Gửi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <p>@Copyright 2023 IOT_NHOM8, All rights reserved</p>
+    </div>
+    </div>
+</body>
+
+</html>

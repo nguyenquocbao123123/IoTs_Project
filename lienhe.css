@@ -1,0 +1,314 @@
+
+body{
+    font: 100%/125% “Times New Roman”, sans-serif; 
+    padding: 0px;
+    background-color: rgb(199, 247, 241); 
+  /* background: url(./traffic\ video.gif) no-repeat center center fixed;
+  background-size: cover; */
+  }
+  
+  #wrapper{
+    padding: 0px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0px;
+    }
+  #header {
+    background-color: rgb(255, 99, 71);
+    border-radius: 0px;
+    height: 100px;
+    margin-bottom: 0px;
+    font-style: bold;
+    }
+  #header p{
+    color: darkblue;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    }
+  
+  #header a{
+    text-decoration: none;
+  }
+  
+  #footer {
+    clear: both;
+    text-align: center;
+    margin-top: 15px;
+    /* margin-left: 500px; */
+    background-color: rgba(9, 223, 112, 0.799);
+    /* margin-right: 500px; */
+    }
+  #footer p{
+    font-size: 15pt;
+    font-style: italic;
+    color: blue;
+    padding: 3px;
+    text-align: center;
+    }
+  
+  .box {
+    float: left;
+    width: 140px;
+    height: 100px;
+    border-radius: 0px;
+    background-color: lightblue;
+    }
+  .box img{
+    margin-left: 20px;
+    z-index: 999;
+    cursor: progress;
+    }
+ 
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .menu-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #29c8cb;
+    height: 60px;
+    font-family:Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+  }
+  .menu-area a:hover{
+    background: rgb(64, 0, 255);
+    color: #fff;
+  }
+  .menu-area ul{
+    list-style: none;
+    display: flex;
+  }
+  .menu-area li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-area li:hover .dropdown-1 > li{
+    display: block;
+    top: 0;
+  }
+  .dropdown-1 li{
+    display: none;
+    position: relative;
+    border-radius: 6px;
+  }
+  .dropdown-1{
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dropdown-1 li:hover .dropdown-2 li{
+    display: block;
+   
+  
+  }
+  .dropdown-2 li{
+    display: none;
+  }
+  .dropdown-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+  }
+  .link-area
+  {
+    position:fixed;
+    bottom:20px;
+    left:20px;  
+    padding:15px;
+    border-radius:40px;
+    background:#262626;
+  }
+  .link-area a
+  {
+    text-decoration:none;
+    color:#fff;
+    font-size:25px;
+  }
+  section{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background:rgb(199, 247, 241);
+  margin-left: -10px;
+  margin-right:-10px;
+
+  
+}
+section::before{
+  
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width:70%;
+  height: 100%;
+  background:  #38d2fc;
+}
+section .container1 {
+  background-color: rgb(199, 247, 241);
+
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display:flex;
+  z-index: 2;
+}
+section .container1 .oke {
+  position: absolute;
+  top: 10px;
+  width: 400px;
+  height: calc(100% - 80px);
+  background: #00c8ff;
+  z-index: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+  section .container1 .oke h2{
+      color: #ffffff;
+      font-size: 24px;
+      margin: 20px 0;
+      text-align: center;
+          
+}
+section .container1 .oke .hoicham {
+  color:black;
+  margin-left: 0px;
+  /* margin: 10px; */
+  font-size: 18px;
+  height: 300px;
+  line-height: 35px;
+ 
+ 
+}
+section .container1 .oke .okela a {
+  color: #270f0f;
+  margin-left: 30px;
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 25px;
+  width:15px;
+}
+section .container1 .oke .okela a:hover{
+  opacity: 1;
+}
+section .container1 .containerForm1{
+  position: absolute;
+  padding: 70px 50px;
+  background:#07575b;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 95%;
+  box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+section .container1 .containerForm1 h3{
+  color:#e2e2e2;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+section .container1 .containerForm1 .formBox{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-left:5px ;
+}
+section .container1 .containerForm1 .formBox .inputBox{
+  position: relative;
+  margin: 0 0 35px 0;
+}
+section .container1 .containerForm1 .formBox .inputBox.w50{
+  width: 47%;
+}
+section .container1 .containerForm1 .formBox .inputBox.w100{
+  width: 100%;
+}
+section .container1 .containerForm1 .formBox .inputBox input,
+section .container1 .containerForm1 .formBox .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  resize: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  
+}
+section .container1 .containerForm1 .formBox .inputBox textarea{
+  min-height: 120px;
+}
+section .container1 .containerForm1 .formBox .inputBox  button{
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  width: 150px;
+  padding: 15px;
+}
+section .container1 .containerForm1 .formBox .inputBox  button:hover{
+  background:  #00e1ff;
+}
